@@ -11,8 +11,8 @@ public class main {
 		DatcasLocator dcl = new DatcasLocator();
 		String s;
 		try {
-			s = dcl.getdatcasPort().getProd("tldr");
-			JOptionPane.showMessageDialog(null, s);
+			s = dcl.getdatcasPort().getCas("datetime");
+			JOptionPane.showMessageDialog(null,"It's " + s);
 		} catch (RemoteException | ServiceException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
